@@ -1,7 +1,9 @@
 // creating action using Action creator function
 export const incNum = () => {
+    // export const incNum = (num) => {
     return {
-        type: "INCREMENET"
+        type: "INCREMENET",
+        // payload: num
     }
 }
 

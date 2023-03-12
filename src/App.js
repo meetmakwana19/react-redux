@@ -14,27 +14,28 @@ const App = () => {
           <h4>using React and Redux</h4>
 
           <div className="quantity">
-            <a
+            <p
               className="quantity__minus"
               title="Decrement"
               onClick={() => dispatch(decNum())}
             >
               <span>-</span>
-            </a>
+            </p>
             <input
               name="quantity"
               type="text"
               className="quantity__input"
               // value="0"
               value={myState}
+              readOnly
             />
-            <a
+            <p
               className="quantity__plus"
               title="Increment"
               onClick={() => dispatch(incNum())}
             >
               <span>+</span>
-            </a>
+            </p>
           </div>
         </div>
       </div>
