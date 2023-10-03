@@ -6,9 +6,16 @@ Three basic imp parts :
 2. Reducer - How to do
 3. State - Has current/updated value with the help of Redux store
 
+## WHAT IS REDUX?
+
+1. An open source JS library for managing application state.
+2. Recommended for using only with big projects involing complex state management.
+
 ## WHY REDUX?
 
 - When a JavaScript application grows big, it becomes difficult for the user to manage its state.
+
+- It can be difficult to pass data from child component to parent component in certain cases.
 
 - Redux solves this problem by managing application's state with a single global object called Store
 
@@ -21,6 +28,8 @@ Three basic imp parts :
 #### **ACTION**
 
 - An action is a **plain JS object** that describes the intention to cause change(Like ordering something on a button click)
+- It has the responsibility to get data from ReactJS UI and pass to the Redux's reducer to put that data into store.
+- Action can itself modify data because reducer cant do logic work.
   - Has a `type` field like `{ type : 'ORDER' }`
   - Tells what to do but doesnt tell how to do
   - Pure Object example :
